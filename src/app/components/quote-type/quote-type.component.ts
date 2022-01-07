@@ -1,5 +1,7 @@
 import { Quote } from '../../Quote';
 import { Component, OnInit, Input } from '@angular/core';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-quote-type',
@@ -8,6 +10,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class QuoteTypeComponent implements OnInit {
   @Input() quote!: Quote;
+  faTimes = faTimes;
 
   constructor() { }
 
