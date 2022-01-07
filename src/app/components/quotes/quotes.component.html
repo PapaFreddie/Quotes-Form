@@ -1,1 +1,2 @@
-<app-quote-type *ngFor = "let quote of quotes"[quote] = "quote"></app-quote-type>
+<app-quote-type (onDeleteQuote) = "deleteQuote(quote)" *ngFor = "let quote of quotes"[quote] = "quote"></app-quote-type>
+ 

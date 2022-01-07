@@ -16,5 +16,11 @@ export class QuotesComponent implements OnInit {
     this.quoteService.getQuotes().subscribe((quotes) => (this.quotes = quotes));
   }
 
+  deleteQuote(quote: Quote) {
+    this.quoteService.deleteQuote(quote).subscribe(()=> (this.quotes = this.quotes.filter(t => t.id !== quote.id)));
+
+
+  }
+
 
 }
