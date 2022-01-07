@@ -1,4 +1,6 @@
-export const QUOTES = [
+import {Quote} from './Quote'
+
+export const QUOTES: Quote[] = [
     {
         id: 1,
         text: '"There is no path to happiness; happiness is the path."',
