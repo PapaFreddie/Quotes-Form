@@ -1,14 +1,16 @@
-<form>
+<form (ngSubmit) = "onSubmit()"class="add-form">
     <div class="form-control">
         <label for="text">Quote:</label>
-        <input type="text" name="text" id="text" placeholder="Add Quote Here!">
+        <input type="text" name="text"  [(ngModel)] = "text"  id="text" placeholder="Add Quote Here!">
     </div>
     <div class="form-control">
         <label for="text">Author Name:</label>
-        <input type="text" name="author" id="author" placeholder="Add Author Name Here!">
+        <input type="text" name="author" [(ngModel)] = "author" id="author"  placeholder="Add Author Name Here!">
     </div>
     <div class="form-control form-control-check">
         <label for="text">Inspirational?:</label>
-        <input type="checkbox" name="insprational" id="insprational">
+        <input type="checkbox" name="insprational" [(ngModel)] = "inspirational" id="insprational">
     </div>
+    {{text}}
+    <input type="submit" value="Save Quote Here!" class="btn btn-block">
 </form>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Quote} from '../../Quote'
 import { QuoteService } from 'src/app/services/quote.service';
+import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-quotes',
@@ -20,6 +21,9 @@ export class QuotesComponent implements OnInit {
     this.quoteService.deleteQuote(quote).subscribe(()=> (this.quotes = this.quotes.filter(t => t.id !== quote.id)));
 
 
+  }
+  addQuote(quote: Quote) {
+    console.log(quote);
   }
 
 
