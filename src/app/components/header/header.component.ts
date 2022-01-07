@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -7,14 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   title: string= 'Quotes App';
+  showAddQuote: boolean = false;
+  subscription!: Subscription;
 
 
-  constructor() { }
+  constructor(private uiService: UiService) {
+    this.subscription = this.uiService.onToggle().subscribe(value => this.showAddQuote = value)
+   }
 
   ngOnInit(): void {
   }
   toggleAddQuote(){
-    console.log('toggle');
-  }
+    this.uiService.toggleAddQuote();
+    }
 
 }

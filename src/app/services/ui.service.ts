@@ -13,4 +13,7 @@ export class UiService {
     this.showAddQuote = !this.showAddQuote;
     this.subject.next(this.showAddQuote);
   }
+  onToggle(): Observable<any> {
+    return this.subject.asObservable();
+  }
 }
