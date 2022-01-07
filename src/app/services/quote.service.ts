@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
-import { QUOTES } from 'src/app/mock-quotes';
 import {Quote} from '../Quote'
-import { Observable, of } from 'rxjs';
+import { from, Observable} from 'rxjs';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuoteService {
+  private apiUrl = 'http://localhost:5000/quotes'
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   getQuotes(): Observable<Quote[]> {
-   const quotes = of(QUOTES);
-   return quotes;
+  return this.http.get<Quote[]>(this.apiUrl);
   }
 }

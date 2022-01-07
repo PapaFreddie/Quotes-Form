@@ -16,5 +16,8 @@ export class QuoteTypeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onDelete(quote: any){
+    console.log('quote');
+  }
 
 }
