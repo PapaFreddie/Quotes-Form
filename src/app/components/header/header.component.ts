@@ -13,5 +13,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  toggleAddQuote(){
+    console.log('toggle');
+  }
 
 }
