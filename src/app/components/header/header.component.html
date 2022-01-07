@@ -1,4 +1,4 @@
 <header>
     <h2>{{title}}</h2>
-    <app-button color = "{{showAddQuote ? 'red' : 'blue' }}" text = "{{showAddQuote ? 'Close' : 'Add Quote' }}" (btnClick) = "toggleAddQuote()"></app-button>
+    <app-button *ngIf = "hasRoute('/')" color = "{{showAddQuote ? 'red' : 'blue' }}" text = "{{showAddQuote ? 'Close' : 'Add Quote' }}" (btnClick) = "toggleAddQuote()"></app-button>
 </header>
