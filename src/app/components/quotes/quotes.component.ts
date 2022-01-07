@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Quote} from '../../Quote'
 import { QuoteService } from 'src/app/services/quote.service';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
+//import { Quote } from '@angular/compiler';
 
 @Component({
   selector: 'app-quotes',
@@ -23,7 +24,7 @@ export class QuotesComponent implements OnInit {
 
   }
   addQuote(quote: Quote) {
-    console.log(quote);
+    this.quoteService.addQuote(quote).subscribe((quote) => (this.quotes.push(quote)));
   }
 
 

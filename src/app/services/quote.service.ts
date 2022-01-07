@@ -18,4 +18,8 @@ export class QuoteService {
     const url = `${this.apiUrl}/${quote.id}`;
     return this.http.delete<Quote>(url);
   }
+  addQuote(quote: Quote): Observable<Quote> {
+    return this.http.post<Quote>(this.apiUrl, quote)
+
+  }
 }
