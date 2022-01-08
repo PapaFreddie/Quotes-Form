@@ -13,6 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddQuoteComponent } from './components/add-quote/add-quote.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { VotesComponent } from './components/votes/votes.component';
 const appRoutes: Routes = [
   {
     path: '', component: QuotesComponent
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     AddQuoteComponent,
     AboutComponent,
     FooterComponent,
+    VotesComponent,
   ],
   imports: [
     BrowserModule,

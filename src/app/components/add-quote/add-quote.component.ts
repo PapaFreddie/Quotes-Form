@@ -25,7 +25,7 @@ export class AddQuoteComponent implements OnInit {
   }
   onSubmit(){
     if(!this.text) {
-      alert('Please add quote to proceed!');
+      alert('Please! Add quote to proceed >>>');
       return;
     }
     const newQuote = {
