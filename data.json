@@ -1,22 +1,32 @@
 {
   "quotes": [
     {
+      "id": 1,
       "text": "'There is no path to happiness; happiness is the path.'",
       "author": "Buddha",
-      "inspirational": false,
-      "id": 1
+      "inspirational": false
+      
     },
     {
+      "id": 2,
       "text": "'There is no path to happiness; happiness is the path.'",
       "author": "Buddha",
-      "inspirational": true,
-      "id": 2
+      "inspirational": true
+      
     },
     {
+      "id": 3,
       "text": "'There is no path to happiness; happiness is the path.'",
       "author": "Fred Papa",
-      "inspirational": false,
-      "id": 3
+      "inspirational": false
+      
+    },
+    {
+      "id": 4,
+      "text": "'There is no path to happiness; happiness is the path.'",
+      "author": "Fred Papa",
+      "inspirational": false
     }
+    
   ]
 }
