@@ -6,6 +6,7 @@
 The Quotes App displays quotes that people have already inputed so that users can easily view and read. The app also allows new users to input their new quotes and be added to the application so they can be viewed and be red by the app users. This application also has the delete button where by the users can delete any quotes they wish to delete, and finally the app has the upvote and downvote to enable the users to vote for the best quotes they have gone through in the application.
 
 ## Live Link
+https://papafreddie.github.io/Quotes-Form/
 
 
 
