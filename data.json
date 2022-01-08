@@ -5,28 +5,30 @@
       "text": "'There is no path to happiness; happiness is the path.'",
       "author": "Buddha",
       "inspirational": false
-      
     },
     {
       "id": 2,
       "text": "'There is no path to happiness; happiness is the path.'",
       "author": "Buddha",
       "inspirational": true
-      
     },
     {
       "id": 3,
       "text": "'There is no path to happiness; happiness is the path.'",
       "author": "Fred Papa",
       "inspirational": false
-      
     },
     {
       "id": 4,
       "text": "'There is no path to happiness; happiness is the path.'",
       "author": "Fred Papa",
       "inspirational": false
+    },
+    {
+      "text": "'There is no path to happiness; happiness is the path.'",
+      "author": "Fred Papa",
+      "inspirational": true,
+      "id": 5
     }
-    
   ]
 }
